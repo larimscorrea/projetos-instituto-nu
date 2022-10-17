@@ -1,0 +1,43 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+}
+
+header h1 {
+  background-color: #173f47;
+  height: 300px;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+nav {
+  background-color: #e81e4a;
+  opacity: 90%;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+nav li {
+  float: left;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+section,
+footer {
+  margin: 40px;
+}
+
+h2 {
+}
