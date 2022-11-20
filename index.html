@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Trip's Agency Project</title>
+</head>
+
+<body>
+    <header class="container-fluid p-2 bg-warning text-center letter-spacing">
+
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Dream's trip</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Packs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fees</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contacts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img width="50px" height="500px" src="./img/Depositphotos_370163902_XL.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Belo Horizonte</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img width="100px" height="500px" src="./img/Depositphotos_43461273_XL.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Rio de Janeiro</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img width="100px" height="500px" src="./img/waterfall-ga8b56fe58_1920.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Foz Iguaçu</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <section class="container-fluid bg-light text-center p-2">
+        <h2>Know ours packages</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, aspernatur rem suscipit tempora expedita
+            doloribus nihil, deleniti nobis esse minus a aperiam quasi temporibus assumenda aliquid repellat molestias
+            laborum? Esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor necessitatibus veritatis
+            expedita recusandae veniam voluptatem distinctio? Doloribus eos quia, hic at unde ut eius! Neque impedit rem
+            commodi accusantium id.
+            <br> <br>
+            <a href="https://br.lipsum.com/feed/html"></a>
+            <hr>
+        </p>
+        <div class="row">
+            <figure class="col text-center">
+                <img src="/img/beach.jpg" alt="Mar com uma faixa de areia branca" width="200px" height="200px">
+                <figcaption>Fortaleza</figcaption>
+
+            </figure>
+            <figure class="col text-center">
+                <img src="/img/cristo-redentor.jpg" alt="A estátua do Cristo Redentor com céu límpido atrás"
+                    width="200px" height="200px">
+                <figcaption>Rio de Janeiro</figcaption>
+
+            </figure>
+            <figure class="col text-center">
+                <img src="/img/animals-beach.jpg" alt="Animais brincando no mar aberto" width="200px" height="200px">
+                <figcaption>Natal</figcaption>
+
+            </figure>
+        </div>
+        <div class="col text-center">
+            <video width="400px" height="350px" controls>
+                <source src="/videos/Nuvens.mp4" type="video/mp4">
+
+                <p>Your browser doesn't support the video<a href=""></a></p>
+            </video>
+
+            <video width="400px" height="350px" controls>
+                <source src="/videos/Praia.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+    </section>
+    <section class="container-fluid bg-warning text-xl-center p-2">
+        <h2>Fees and services</h2>
+        <p>See ours fees for services</p>
+        <table class="table table-warning table-striped table-hover table-bordered border-warning">
+            <caption>Description of services and respectives values</caption>
+            <thead class="table-secundary">
+                <tr>
+                    <th>Service</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divisor">
+                <tr>
+                    <td>Book of the hotel</td>
+                    <td>$150,00</td>
+                </tr>
+                <tr>
+                    <td>Buy the tickets</td>
+                    <td>$100,00</td>
+                </tr>
+                <tr>
+                    <td>Rent to cars</td>
+                    <td>$50,00</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+    <section class="container-fluid bg-light p-2">
+        <h2 class="text-center">Do already your budget</h2>
+        <form method=" get" action="">
+            <fieldset>
+                <legend>User data</legend>
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" required name="email">
+                </div>
+                <div class="mb-3">
+                    <labeL class="form-label" for="date-departure">Departure date</label>
+                    <input type="date" class="form-control" id="date-departure" name="departure-date">
+                </div>
+                <div class="mb-3">
+                    <labeL class="form-label" for="date-back">Date back</label>
+                    <input type="date" class="form-control" id="date-back" name="back-date">
+                </div>
+                <div class="mb-3">
+                    <labeL class="form-label" for="amount-people">Amount of people</label>
+                    <input type="number" class="form-control" id="amount-people" name="amount-people">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>What services you wish contract?</legend>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="tickets" value="tickets" id="buy-tickets">
+                    <label class="form-check-label" for="buy-tickets">
+                        Ticket's buy
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" name="accommodation" value="accommodation" id="accomodation"
+                        class="form-check-input">
+                    <label class="form-check-label" for="accomodation">
+                        Accommodation
+                        reservation</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="vehicles" value="vehicles" id="vehicles" class="form-check-input">
+                    <label class="form-check-label" for="vehicles">
+                        Vehicles's rent
+                    </label>
+                </div>
+            </fieldset>
+            <br>
+            <button class="btn btn-secundary">Save</button>
+        </form>
+    </section>
+
+
+    <footer class="container-fluid bg-warning text-center">
+        <p>Development for Larissa Corrêa</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
