@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles.css">
     <title>Trip's Agency Project</title>
 </head>
 
-<body>
+<body class="container-fluid">
     <header class="container-fluid p-2 bg-warning text-center letter-spacing">
 
         <nav class="navbar navbar-expand-lg bg-warning">
@@ -45,6 +45,10 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-cart3"></i></a>
+
+                        </li>
                     </ul>
 
                 </div>
@@ -61,7 +65,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img width="50px" height="500px" src="./img/Depositphotos_370163902_XL.jpg" class="d-block w-100"
+                    <img width="100px" height="500px" src="./img/Depositphotos_370163902_XL.jpg" class="d-block w-100"
                         alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Belo Horizonte</h3>
@@ -94,8 +98,8 @@
             </button>
         </div>
     </header>
-    <section class="container-fluid bg-light text-center p-2">
-        <h2>Know ours packages</h2>
+    <section class="container-fluid bg-light text-center p-5">
+        <h2>Packages</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, aspernatur rem suscipit tempora expedita
             doloribus nihil, deleniti nobis esse minus a aperiam quasi temporibus assumenda aliquid repellat molestias
             laborum? Esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor necessitatibus veritatis
@@ -105,23 +109,54 @@
             <a href="https://br.lipsum.com/feed/html"></a>
             <hr>
         </p>
-        <div class="row">
-            <figure class="col text-center">
-                <img src="/img/beach.jpg" alt="Mar com uma faixa de areia branca" width="200px" height="200px">
-                <figcaption>Fortaleza</figcaption>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/beach.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title">Fortaleza, CE</h5>
+                        <h1 class="card-subtitle text-muted">R$1.500,00</h1>
+                        <p class=" card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book</a>
+                    <div class="card-footer">
+                        <small class="text-muted">At untill 3x.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/cristo-redentor.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title">Rio de Janeiro, RJ</h5>
+                        <h1 class="card-subtitle text-muted">R$1.500,00</h1>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book</a>
+                    <div class="card-footer">
+                        <small class="text-muted">At untill 3x. </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/animals-beach.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title">Natal, RN</h5>
+                        <h1 class="card-subtitle text-muted">R$1.500,00</h1>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book</a>
+                    <div class="card-footer">
+                        <small class="text-muted">At untill 3x.</small>
+                    </div>
+                </div>
+            </div>
 
-            </figure>
-            <figure class="col text-center">
-                <img src="/img/cristo-redentor.jpg" alt="A estátua do Cristo Redentor com céu límpido atrás"
-                    width="200px" height="200px">
-                <figcaption>Rio de Janeiro</figcaption>
-
-            </figure>
-            <figure class="col text-center">
-                <img src="/img/animals-beach.jpg" alt="Animais brincando no mar aberto" width="200px" height="200px">
-                <figcaption>Natal</figcaption>
-
-            </figure>
         </div>
         <div class="col text-center">
             <video width="400px" height="350px" controls>
@@ -137,7 +172,7 @@
 
 
     </section>
-    <section class="container-fluid bg-warning text-xl-center p-2">
+    <section class="container-fluid bg-warning text-xl-center p-5">
         <h2>Fees and services</h2>
         <p>See ours fees for services</p>
         <table class="table table-warning table-striped table-hover table-bordered border-warning">
@@ -217,17 +252,37 @@
                 </div>
             </fieldset>
             <br>
-            <button class="btn btn-secundary">Save</button>
+            <button class="btn btn-primary">Save</button>
         </form>
     </section>
 
 
     <footer class="container-fluid bg-warning text-center">
-        <p>Development for Larissa Corrêa</p>
+        <p>Developer by Larissa Corrêa</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 </body>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Your shoppings</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Product added at the cart.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Keep buying</button>
+                <a class="btn btn-sucess" type="button" href="checkout.html">
+                    Checkout
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
